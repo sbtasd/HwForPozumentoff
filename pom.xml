@@ -50,11 +50,8 @@
 
     </dependencies>
     <repositories>
-        <!--<repository>-->
-        <!--<id>sbt-nexus</id>-->
-        <!--<url>http://sbtnexus.ca.sbrf.ru:8081/nexus/content/repositories/oad_thirdparty/</url>-->
-        <!--</repository>-->
-        <repository>
+      
+     <!--   <repository>
             <id>oad-release</id>
             <url>http://sbtnexus.ca.sbrf.ru:8081/nexus/content/repositories/oad_release/</url>
         </repository>
@@ -68,7 +65,7 @@
                 <enabled>true</enabled>
             </snapshots>
         </repository>
-        <!-- OAT repository -->
+        <!{1}** OAT repository **{1}>
         <repository>
             <snapshots>
                 <enabled>false</enabled>
@@ -83,10 +80,14 @@
             <name>allinone</name>
             <url>http://10.68.195.170:8081/artifactory/allinone</url>
         </repository>
-        <!--<repository>-->
-        <!--<id>git-oat</id>-->
-        <!--<url>http://gitlab.oat.ca.sbrf.ru/oad/oadsmoke.git</url>-->
-        <!--</repository>-->
+		-->
+   
+		<repository>
+            <snapshots />
+            <id>maven-central</id>
+            <name>maven-central</name>
+            <url>http://central.maven.org/maven2/</url>
+        </repository>
     </repositories>
 
 </project>

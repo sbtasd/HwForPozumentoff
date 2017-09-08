@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -13,10 +14,11 @@ import utils.WebDriverFactory;
 public class BasePage extends Assert {
     protected final WebDriver driver;
     protected Actions actions;
-
+    protected JavascriptExecutor js;
     public BasePage() {
         this.driver = WebDriverFactory.getInstance().getDriver();
         this.actions = new Actions(driver);
+        js = (JavascriptExecutor) driver;
     }
 
     public void moveToAndClick(WebElement element) {
@@ -25,6 +27,10 @@ public class BasePage extends Assert {
 
     public void clickElement(WebElement element) {
         element.click();
+    }
+
+    public JavascriptExecutor getJs() {
+        return js;
     }
 //    @Test
 //    public  void testName() throws Exception {

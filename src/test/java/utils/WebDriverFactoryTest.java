@@ -10,7 +10,7 @@ import static org.testng.Assert.assertTrue;
  */
 public class WebDriverFactoryTest extends Assert {
 
-    @org.testng.annotations.Test
+    //@org.testng.annotations.Test
     public void testGetInstance() throws Exception {
         WebDriverFactory webDriverFactory1 = WebDriverFactory.getInstance();
         WebDriverFactory webDriverFactory2 = WebDriverFactory.getInstance();
@@ -18,10 +18,9 @@ public class WebDriverFactoryTest extends Assert {
         testGetDriver();
     }
 
-    @org.testng.annotations.Test
+//    @org.testng.annotations.Test
     public void testGetDriver() throws Exception {
         try {
-
             WebDriverFactory driverFactory = WebDriverFactory.getInstance();
             WebDriver driver = driverFactory.getDriver();
             driver.get("http://www.sberbank.ru/ru/person");
