@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Глагне">
+    <test name="Тестирование главной страницы портала сбербанка  - смена региона">
+        <classes>
+            <class name="tests.SberBankMainPageTestSigma">
+                <methods>
+                    <include name="MainPageTestSigma"/>
+                </methods>
+            </class> <!-- tests.SberBankMainPageTestSigma -->
+        </classes>
+    </test> <!-- HwForPozumentoff -->
+</suite> <!-- Default Suite -->
